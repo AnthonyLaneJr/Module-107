@@ -1,0 +1,4 @@
+.navbar h1 {
+  /*-----use the first div in component to specify all css to specific componenets-minimizing interaction-----*/
+  color: peru;
+}
