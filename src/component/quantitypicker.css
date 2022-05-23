@@ -1,0 +1,22 @@
+div.quantity-picker {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  max-width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.quantity-picker button {
+  width: 2rem;
+}
+.add-total {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  width: 4rem;
+}
+.quantity-picker label {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}

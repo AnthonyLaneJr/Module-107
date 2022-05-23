@@ -1,0 +1,33 @@
+div.product {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+.product .product-img {
+  width: 250px;
+  height: 175px;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: bisque;
+  border-style: line;
+  border-width: 3px;
+}
+.product h1,
+h4 {
+  font-weight: 700;
+}
+.product p {
+  max-width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* .product button {
+  width: 2rem;
+}
+.add-total {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  width: 4rem;
+} */
