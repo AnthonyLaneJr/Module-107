@@ -2,6 +2,11 @@ div.product {
   display: flex;
   flex-direction: column;
   margin-top: 4rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  border: 3px, solid, black;
 }
 .product .product-img {
   width: 250px;
@@ -20,6 +25,9 @@ h4 {
   max-width: 65%;
   margin-left: auto;
   margin-right: auto;
+}
+.product button{
+  background-color: #9d9d9d;
 }
 /* .product button {
   width: 2rem;

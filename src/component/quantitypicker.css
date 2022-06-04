@@ -2,12 +2,8 @@ div.quantity-picker {
   display: flex;
   flex-direction: row;
   align-content: center;
-  max-width: 10%;
   margin-left: auto;
   margin-right: auto;
-}
-.quantity-picker button {
-  width: 2rem;
 }
 .add-total {
   margin-left: auto;
@@ -19,4 +15,8 @@ div.quantity-picker {
 .quantity-picker label {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+.quantity-picker button.btn{
+  background-color: rgb(31, 53, 94);
+  width: 2rem !important;
 }

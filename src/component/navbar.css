@@ -2,3 +2,26 @@
   /*-----use the first div in component to specify all css to specific componenets-minimizing interaction-----*/
   color: peru;
 }
+.navbar{
+  background-color: rgb(31, 53, 94);
+}
+nav.navbar ul li a {
+  color: #9d9d9d !important;
+}
+nav div a.navbar-brand{
+  color: #9d9d9d !important;
+}
+.navbar input.form-control{
+  color: #9d9d9d !important;
+}
+form.d-flex button.btn{
+  color: #9d9d9d;
+  border-color: #9d9d9d;
+}
+form.d-flex button.btn:hover{
+  background-color: rgb(7, 7, 7)
+  ;
+}
+.navbar button.navbar-toggler:hover{
+  background-color: black;
+}

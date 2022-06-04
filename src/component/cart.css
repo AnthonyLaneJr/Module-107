@@ -1,0 +1,8 @@
+div.cart{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.cart button{
+    width: 3.5rem;
+    height: 1.5rem;
+}
