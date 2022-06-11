@@ -14,12 +14,12 @@ const About = () => {
 
     const getContent = () => {
         if (visible) {
-            return <div>
+            return <div className="about">
             <h6>TonyLane2017@gmail.com</h6>
             <button onClick={hideEmail} className="btn btn-info">Hide Info</button>
             </div>
         } else {
-            return <div>
+            return <div className="about">
                     <h6>Click the button below</h6>
                     <button onClick={showEmail} className="btn btn-primary">Show Info</button>
                     </div>

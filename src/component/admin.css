@@ -1,0 +1,61 @@
+div.admin div.container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+section{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+section div{
+    display: flex;
+    flex-direction:row;
+}
+div h2.title{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+section h3{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.create-item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+div.create-item div{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+input{
+    margin-right: 0;
+    width: 100%;
+
+}
+div.container h2{
+    display: inline-block;
+    width: 40%;
+    margin-left: 0%;
+}
+button{
+    width: 4rem;
+    height: 2rem;
+    align-content: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+section h2{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.new-products{
+    display: flex;
+    flex-direction: column;
+}
