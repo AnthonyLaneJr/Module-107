@@ -1,7 +1,7 @@
 var catalog = [
   {
     _id: "5f40a6baac77a903d8f682c6",
-    price: 10.0,
+    price: 10.05,
     stock: 13,
     title: "Yoga Mat",
     image: "yoga-mat.jpg",
@@ -10,7 +10,7 @@ var catalog = [
   },
   {
     _id: "5f40a6ba41d9e5044ced586c",
-    price: 95.0,
+    price: 95.40,
     stock: 21,
     title: "Kettlebell, 40 KG",
     image: "kb-40kg.jpg",
@@ -19,7 +19,7 @@ var catalog = [
   },
   {
     _id: "5f40a6baa9e6e22fa1d5fac4",
-    price: 20.0,
+    price: 20.10,
     stock: 20,
     title: "Dumbbell 10lb",
     image: "db10.png",
@@ -27,8 +27,8 @@ var catalog = [
     category: "Weights",
   },
   {
-    _id: "5f40a6baa9e6e22fa1d5fac64",
-    price: 50.0,
+    _id: "5f40a6baa91d5fac64",
+    price: 50.15,
     stock: 20,
     title: "Dumbbell, 25lb.",
     image: "db-25.jpeg",
@@ -36,7 +36,7 @@ var catalog = [
     category: "Weights",
   },
   {
-    _id: "5f40a6baa9e6e22fa1d5fac987",
+    _id: "5f4aa9e6e22fa1d5fac987",
     price: 90.0,
     stock: 20,
     title: "Dumbbell, 45lb.",
@@ -46,7 +46,7 @@ var catalog = [
   },
   {
     _id: "5f40a6baa9e6e22fa1d5fac721",
-    price: 25.0,
+    price: 25.25,
     stock: 20,
     title: "Resistance Bands",
     image: "resistance-bands.jpg",
@@ -55,7 +55,7 @@ var catalog = [
   },
   {
     _id: "5f40a6baa9e6e22fa1d5fac654",
-    price: 40.0,
+    price: 40.50,
     stock: 20,
     title: "Weightlifting Belt",
     image: "weightlifting-belt.jpg",
@@ -64,7 +64,7 @@ var catalog = [
   },
   {
     _id: "5f40a6baa9e6e22fa1d5fac7451",
-    price: 15.0,
+    price: 15.75,
     stock: 20,
     title: "Weightlifting Gloves",
     image: "weightlifting-gloves.jpg",
@@ -72,7 +72,7 @@ var catalog = [
     category: "Gear",
   },
   {
-    _id: "5f40a6baa9e6e22fa1d5fac9876",
+    _id: "5f40a6baa9e6a1d5fac9876",
     price: 20.47,
     stock: 20,
     title: "Knee Sleeves",
@@ -81,7 +81,7 @@ var catalog = [
     category: "Gear",
   },
   {
-    _id: "5f40a6baa9e6e22fa1d5fac6543",
+    _id: "a6baa9e6e22fa1d5fac6543",
     price: 15.0,
     stock: 20,
     title: "Wrist Wraps",

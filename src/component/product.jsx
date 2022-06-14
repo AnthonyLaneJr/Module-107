@@ -34,12 +34,6 @@ const Product = (props) => {
       ></img>
       <h1>{props.data.title}</h1>
       <h4>${props.data.price} USD</h4>
-      <p>
-        Sample Product Description. Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Fugiat illo eligendi quae, dicta ipsa dolorum ab
-        cupiditate facere nemo expedita magnam, pariatur perspiciatis corrupti!
-        Delectus numquam suscipit necessitatibus iusto aut.
-      </p>
       <label>Total: ${CalculateTotal()}</label>
       <br></br>
       <QuantityPicker onChange={onQuantityChange}></QuantityPicker>

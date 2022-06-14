@@ -7,6 +7,15 @@ import StoreContext from "../context/storeContext";
 function Navbar() {
   let cart = useContext(StoreContext).cart;
 
+  const getNumItems = () => {
+    let total = 0;
+    for (let i = 0; i < cart.length; i++){
+      let prod = cart[i];
+      total += prod.quantity;
+    }
+    return total;
+  }
+
 
   return (
       <nav className="navbar navbar-expand-lg navbar-dark">
@@ -39,7 +48,7 @@ function Navbar() {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/cart">
-                  {cart.length} : In Cart
+                  {getNumItems()} Items : In Cart
                 </Link>
               </li>
               <li className="nav-item">
