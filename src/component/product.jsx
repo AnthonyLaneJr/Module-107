@@ -32,9 +32,9 @@ const Product = (props) => {
         src={"/images/" + props.data.image}
         alt="Product Image"
       ></img>
-      <h1>{props.data.title}</h1>
-      <h4>${props.data.price} USD</h4>
-      <label>Total: ${CalculateTotal()}</label>
+      <label className="title">{props.data.title}</label>
+      <label className="price">${props.data.price} USD</label>
+      <label className="total">Total: ${CalculateTotal()}</label>
       <br></br>
       <QuantityPicker onChange={onQuantityChange}></QuantityPicker>
       <br></br>

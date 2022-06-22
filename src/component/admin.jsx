@@ -1,5 +1,6 @@
 import './admin.css';
-import { useState} from 'react'
+import { useState, useEffect} from 'react'
+import DataService from '../services/dataService';
 
 const Admin = () => {
     const [product, setProduct] = useState({});
@@ -7,13 +8,25 @@ const Admin = () => {
     const [coupon, setCoupon] = useState({});
     const[allCoupons, setAllCoupons] = useState([]);
 
-    const saveProduct = () => {
+    const saveProduct = async () => {
         console.log('Saving Product', product);
+
+        let productCopy = {...product};
+        productCopy.price = +productCopy.price; // + forces the string to parse into a number
+
+        let service = new DataService();
+        await service.saveProduct(productCopy);
 
         let copy = [...allProducts];
         copy.push(product);
         setAllProducts(copy);
     };
+
+    const loadProducts = async () => {
+        let service = new DataService()
+        let data = await service.getCatalog();
+        setAllProducts(data);
+    }
 
     const textChanged = (e) => {
         let name = e.target.name;
@@ -28,9 +41,14 @@ const Admin = () => {
 //next: send product to backend server
 
 
-    const saveCoupon = () => {
+    const saveCoupon = async () => {
         console.log('Coupon Saved', coupon)
         
+        let service = new DataService();
+        let couponCopy = {...coupon};
+        couponCopy.discount = parseFloat(couponCopy.discount);
+        await service.saveCoupon(couponCopy);
+
         let copy = [...allCoupons];
         copy.push(coupon);
         setAllCoupons(copy);
@@ -44,7 +62,19 @@ const Admin = () => {
         couponCopy[couponName] = couponVal;
         setCoupon(couponCopy);
     }
+    const loadCoupons = async () => {
+        let service = new DataService()
+        let data = await service.getCoupons();
+        setAllCoupons(data);
+        };
+      
+    
 
+
+    useEffect(() => {
+        loadCoupons();
+        loadProducts();
+    }, [])
 
 
     return(
@@ -64,14 +94,6 @@ const Admin = () => {
                     <div className="image">
                         <h2>Image:</h2>
                         <input name='image' className='form-control' placeholder='Image name' onChange={textChanged} type="text" />
-                    </div>
-                    <div className="stock">
-                        <h2>Stock:</h2>
-                        <input name='stock' className='form-control' onChange={textChanged} type="text" />
-                    </div>
-                    <div className="discount">
-                        <h2>Discount:</h2>
-                        <input name='discount' className='form-control' onChange={textChanged} type="text" />
                     </div>
                     <div className="category">
                         <h2>Category:</h2>
@@ -112,6 +134,5 @@ const Admin = () => {
             </div>
         </div>
         )
-}
-
+    }
 export default Admin;

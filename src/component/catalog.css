@@ -1,3 +1,11 @@
 .catalog h2 {
   color: cadetblue;
 }
+div.catalog_product{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+Product{
+  width: 275px;
+}

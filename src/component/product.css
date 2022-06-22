@@ -2,13 +2,13 @@ div.product {
   display: flex;
   flex-direction: column;
   margin-top: 4rem;
-  width: 70%;
+  width: 275px;
   margin-left: auto;
   margin-right: auto;
   height: auto;
-  border: 3px, solid, black;
+  flex: 1;
 }
-.product .product-img {
+img.product-img {
   width: 250px;
   height: 175px;
   margin-left: auto;
@@ -17,17 +17,24 @@ div.product {
   border-style: line;
   border-width: 3px;
 }
-.product h1,
-h4 {
+.product label.price {
   font-weight: 700;
+  font-size: 1.5rem;
 }
-.product p {
-  max-width: 65%;
-  margin-left: auto;
-  margin-right: auto;
+.product label.title{
+  font-weight: 700;
+  font-size: 2rem;
+
 }
 .product button{
   background-color: #9d9d9d;
+}
+div.product{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 5%;
+  width: 250px;
 }
 /* .product button {
   width: 2rem;
